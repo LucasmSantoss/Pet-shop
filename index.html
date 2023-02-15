@@ -1,34 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"/>
-      <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppis</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header>
-       
-          
-        
-    </header>
-    <main>
+  <header id="header" class="header">
+    <a href="#" class="logo">
+      <img src="./assets/img/logo.png" alt="logo">
+    </a>
 
-    </main>
-    <footer>
+    <ul class="navbar">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#home">Nosotros</a></li>
+      <li><a href="#home">Productos</a></li>
+      <li><a href="#home">Farmacia</a></li>
 
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    </ul>
+
+    <div class="two columns u-pull-right">
+      <ul>
+        <li class="submenu">
+          <img src="./assets/img/carritoo.png" id="img-carrito">
+          <div id="carrito">
+
+            <table id="lista-carrito" class="u-full-width">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+
+            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="header-icons">
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="home" id="home">
+
+      <div class="home-text">
+        <div><img src="./img/logo.png" alt=""></div>
+        <h6>¡Nada mejor que toda una vida juntos!</h6>
+        <h1>Bienvenidos a Puppis</h1>
+        <p>¡Cuidá a tu mejor amigo!</p>
+
+      </div>
+
+      <div class="img-wpp">
+        <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><img src="./assets/img/whatsapp.png"
+            alt="whatsapp"></a>
+      </div>
+    </section>
+
+
+    <section class="nuevo">
+      <h2>¿Nuevo Integrante?</h2>
+      <div class="integrante">
+        <div>
+          <img src="./assets/img/CACHORRO.png" alt="CACHORRO">
+        </div>
+        <div>
+          <img src="./assets/img/GATITO.png" alt="CACHORRO">
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <section class="mapa-form">
+
+    <div class="mapa"> <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d188618.51311104256!2d-71.236572!3d42.381647!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1576756626784!5m2!1sen!2sbd"
+        style="border: 0" allowfullscreen=""></iframe></div>
+    </div>
+    <div class="forms">
+      <form>
+        <div class="labe">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="labe">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationDefault02" required>
+        </div>
+
+        <div class="labe">
+          <label for="validationDefault03" class="form-label">Email</label>
+          <input type="email" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="labe">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div>
+          <button class="btn " type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <footer>
+
+
+    <section class="enlaces">
+      <div class="enl">
+        <h5>Nosotros</h5>
+        <a href="#">Sobre Puppis</a>
+        <a href="#">Blog</a>
+        <a href="#">Sucursales</a>
+        <a href="#">Programación y Desarrollo</a>
+        <a href="#">Revista del mes</a>
+        <a href="#">Desarrollo Institucional</a>
+        <a href="#">Proveedores</a>
+      </div>
+
+      <div class="enl">
+        <h5>Tienda Online</h5>
+        <a href="#">Envío Programado</a>
+        <a href="#">Formas de Entrega</a>
+        <a href="#">Descuentos Bancarios</a>
+        <a href="#">Cambios y devoluciones</a>
+        <a href="#">Legales</a>
+        <a href="#">Botón de arrepentimiento</a>
+        <a href="#">Business</a>
+      </div>
+
+      <div class="enl">
+        <h5>Equipo</h5>
+        <a href="#">Juan Rivera</a>
+        <a href="#">Lucas Santos</a>
+        <a href="#">Alexis Ronaldo</a>
+        <a href="#">Karen Perez</a>
+        <a href="#">Mario Leudo</a>
+        <a href="#">MindHub</a>
+        <a href="#">Términos y Condiciones</a>
+      </div>
+
+      <div class="enl">
+        <img src="./assets/img/logo.png" alt="logo" class="logo-footer">
+        <form>
+          <div class="texto"><input type="email" name="" id="" placeholder="ingresa tu email"></div>
+          <input type="submit">
+        </form>
+        <img src="./assets/img/pagos.png" alt="pagos" class="pagos">
+      </div>
+
+    </section>
+
+    <div class="copyright">
+      <p>Copyright - Puppis 2023</p>
+    </div>
+
+  </footer>
+
+
+  <script src="./assets/scripts/main.js"> </script>
 </body>
+
 </html>
