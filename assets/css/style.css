@@ -9,6 +9,7 @@
 }
 :root{
 	--bg-color: #ffffff;
+	--text-a-color: #164e8d;
 	--text-color: #000;
 	--second-color: #685f78;
 	--main-color: #f66962;
@@ -35,7 +36,7 @@ header{
 	background: rgba(255, 255, 255, 0);
 	padding: 23px 13%;
 	transition: all .40s ease;
-	
+	border-bottom: 0.1px solid #ffffff15;
 }
 
 .submenu {
@@ -65,7 +66,11 @@ width: 40px;
     border-radius: 10px;
     color: white;
 }
-
+.fondo-carrito{
+	background-color: #ffffff;
+	border-radius: 50%;
+	padding: .12rem;
+}
 
 .borrar-curso {
     background-color: red;
@@ -106,8 +111,9 @@ th{
 	
 }
 .navbar a{
-	color: var(--text-color);
-	font-weight: 600;
+	color: #164e8d;
+	text-shadow: 0px 0px 2px #ffffff;
+	font-weight: bold;
 	font-size: var(--p-font);
 	padding: 10px 22px;
 	transition: all .40s ease;
@@ -162,6 +168,7 @@ th{
 }
 .home-text h1{
 	font-size: var(--big-font);
+	text-shadow: 0px 0px 3px #000;
 	color: var(--bg-color);
 	font-size: 70px;
 	text-align: center;
@@ -169,6 +176,7 @@ th{
 }
 .home-text h6{
 	color: #ffffff;
+	text-shadow: 0px 0px 3px #000;
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -176,6 +184,7 @@ th{
 }
 .home-text p{
 	color: var(--bg-color);
+	text-shadow: 0px 0px 3px #000;
 	font-size: var(--p-font);
 	font-weight: 500;
 	margin-bottom: 48px;
@@ -279,6 +288,42 @@ form{
 }
 
 
+/* Nosotros---------------------------------------------------------------- */
+
+.nosotros{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url(../img/gato.webp);
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+	display:flex ;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.contenedor-textimg{
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	border-bottom: 1px solid #164e8d
+}
+.texto{
+	width: 40%;
+	margin: 0 auto 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	line-height: 1.5rem;
+}
+.img-puppis{
+	width: 40%;
+}
+.img-puppis>img{
+	width: 100%;
+	border-radius: 7px;
+}
 
 
 
