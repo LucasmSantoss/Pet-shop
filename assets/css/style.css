@@ -213,6 +213,35 @@ header.sticky{
     width: 60px;
 }
 
+.categorias-animales{
+    text-align: center;
+    width: 100%;
+padding-top: 100px;
+}
+.categorias-cont{
+    padding: 20px 13%;
+    width: 100%;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    place-content: center;
+    gap: 2rem;
+}
+
+.animals{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #164e8d;
+    border-radius: 9px;
+}
+.animals:hover{
+    background-color: #164e8d7a;
+}
+.animals img{
+    width: 50px;
+}
+
 
 /*integrante-----------------------------------------------------------------*/
 .nuevo{
@@ -234,32 +263,6 @@ header.sticky{
 }
 
 
-.mapa{
-    width: 100%;
-}
-
-
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    width: 50%;
-}
-
-
-.labe{
-    display: flex;
-    flex-direction: column;
-}
-
-.form{
-    width: 100%;
-    padding: 100px 13%;
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -279,16 +282,103 @@ form{
 }
 
 
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a{
+    margin: 5px;
+    color: #fff;
+    background-color: #164e8d;
+    padding: 9px 10px;
+    border-radius: 100px;
+}
+.redes-sociales a:hover{
+    margin: 5px;
+    color: #000;
+    background-color: #164e8dd3;
+    padding: 9px 10px;
+    border-radius: 100px;
+}
+
+form{
+    display: flex;
+}
+form button{
+    background-color: #164e8d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+form input{
+    background-color: #164e8d5b;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    color: #fff;
+}
+form textarea{
+    background-color: #164e8d5b;
+    border-radius: 7px;
+   
+}
+select {
+    background-color: #164e8d5b;
+    border-radius: 7px;
+    padding: 6px;
+}
+.mapa{
+    width: 100%;
+}
+iframe{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mapa-form{
+    padding: 100px 10%;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    place-content: center;
+    gap: 2rem;
+    width: 100%;
+    
+}
+
+
+.mapa{
+    width: 100%;
+    height: 100%;
+}
 
 
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+   
+}
 
 
+.labe{
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
+.form{
+    width: 100%;
+    padding: 100px 13%;
+    display: flex;
+    justify-content: center;
+}
 
 
 /*footer-----------------------------------------------------------------*/
@@ -317,28 +407,7 @@ form{
 }
 
 
-/*contact-----------------------------------------------------------------*/
-form{
-    display: flex;
-}
-form button{
-    background-color: #164e8d;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 7px;
-}
-form input{
-    background-color: #164e8d5b;
-    border: none;
-    border-radius: 6px;
-    padding: 6px;
-    color: #fff;
-}
-form textarea{
-    background-color: #164e8d5b;
-    border-radius: 7px;
-}
+
 
 .texto input{
     background-color: #282a2d18;
@@ -356,14 +425,14 @@ form textarea{
     width: 200px;
 }
 .copyright{
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     height: 10vh;
-    background-color: #000;
+   border: 1px solid #164e8d7b;
 }
 footer h4{
     color: #000;
@@ -377,12 +446,6 @@ footer h5{
     color: #164e8d;
 }
 
-.mapa{
-    width: 100%;
-}
-iframe{
-    border-radius: 7px;
-}
 
 
 @media (max-width: 1410px){
@@ -481,6 +544,12 @@ iframe{
 		min-height: 400px;
 		min-width: 300px;
 	}
+    .mapa-form{
+        padding: 100px 13%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        
+        
+    }
 	
 }
 
