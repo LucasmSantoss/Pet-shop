@@ -108,7 +108,7 @@ th{
 }
 .navbar a{
 	color: #164e8d;
-	text-shadow: 0px 0px 2px #a1a1a1;;
+	text-shadow: 0px 0px 2px #a1a1a1;
 	font-weight: 600;
 	font-size: var(--p-font);
 	padding: 10px 22px;
@@ -181,7 +181,7 @@ th{
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background: url(../img/fondo2.jpg);
+	background: url(../img/gato.webp);
 	background-size: cover;
 	background-position: center;
     background-attachment: fixed;
@@ -196,6 +196,7 @@ th{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 }
 .home-text h1{
 	font-size: var(--big-font);
@@ -203,6 +204,7 @@ th{
 	font-size: 70px;
 	text-align: center;
 	text-shadow: 0px 0px 3px #000;
+	font-weight: 700;
 	
 }
 .home-text h6{
@@ -222,7 +224,29 @@ th{
 	text-align: center;
 	text-shadow: 0px 0px 3px #000;
 }
-
+.botones{
+	padding: 0px 13%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	gap: 2rem;
+    place-content: center;
+	width: 100%;
+}
+.btn-home{
+	border: 2px solid #fff;
+	width: 10rem;
+	padding: .2rem;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	background: linear-gradient(to right, #020024, #164e79, #00d4ff);
+	text-align: center;
+}
+.icon-btn{
+	width: 24px;
+	height: 24px;
+}
 header.sticky{
 	background: var(--bg-color);
 	padding: 12px 13%;
@@ -258,6 +282,7 @@ header.sticky{
     width: 100%;
 padding-top: 100px;
 }
+
 .categorias-cont{
     padding: 20px 13%;
     width: 100%;
@@ -283,6 +308,7 @@ padding-top: 100px;
 }
 
 
+
 /*integrante-----------------------------------------------------------------*/
 .nuevo{
     padding: 100px 13%;
@@ -304,28 +330,17 @@ padding-top: 100px;
 
 
 /* Nosotros---------------------------------------------------------------- */
-
-.home-nosotros{
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background: url(../img/gato.webp);
-	background-size: cover;
-	background-position: center;
-    background-attachment: fixed;
-	display:flex ;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
 .contenedor-textimg{
-	display: flex;
-	margin: 1rem auto;
-	padding: 1rem;
+	padding: 20px 10%;
+    width: 100%;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    place-content: center;
+    gap: 4rem;
 	border-bottom: 1px solid #164e8d
 }
 .texto{
-	width: 40%;
+	width: 70%;
 	margin: 0 auto 1rem;
 	display: flex;
 	flex-direction: column;
@@ -333,14 +348,142 @@ padding-top: 100px;
 	line-height: 1.5rem;
 }
 .img-puppis{
-	width: 40%;
+	width: 100%;
 }
 .img-puppis>img{
 	width: 100%;
+	height: 90%;
 	border-radius: 7px;
 }
 
 
+/*jugueteria-----------------------------------------------------------------*/
+.home-jugueteria{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url(../img/jugueteria.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display:flex ;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.buscador{
+	width: 100%;
+	margin-top: 40px;
+}
+.buscador form input{
+	background-color: #164e8d86;
+	width: 20rem;
+	border-radius:30px ;
+}
+.buscador form {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.buscador form button{
+	width: 5rem;
+	border-radius:30px ;
+}
+.buscador .btn{
+	background-color: #164e8da8;
+	color: #fff;
+}
+.error{
+	width: 100%;
+	
+}
+.error img{
+	border-radius: 20px;
+	width: 300px;
+}
+
+#productos{
+	margin-top: 50px;
+	height: 100%;
+	padding: 1rem;
+	
+}
+
+.card{
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 1px 3px 3px #1a1e25;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 20px;
+   
+    transition: all .40s ease;
+    margin: 5px;
+    width: 17rem;
+    height: 22rem;
+    margin-top: 30px;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #1a1e25;
+}
+
+.card img{
+	align-self: center;
+	width: 9rem;
+	height: 10rem;
+}
+.card-body{
+	margin-top: -80px;
+}
+
+.card .btn {
+	background-color: #164e8d;
+	color:#fff ;
+	border: 1px solid #164e8d;
+}
+
+.card .btn:hover{
+	background-color: #164e8db4;
+	color:#fff ;
+	border: 1px solid #164e8d;
+	
+}
+.card a{
+	font-size: 14px;
+}
+.card h5{
+	font-size: 17px;
+}
+
+.card p{
+	padding-top: 14px;
+	font-size: 14px;
+}
+
+.m-0{
+	font-weight: 700;
+}
+
+
+/*farmacia-----------------------------------------------------------------*/
+
+.home-farmacia{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url(../img/farmacia.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display:flex ;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;	
+}
 /*contact-----------------------------------------------------------------*/
 .home-contact{
 	position: relative;
@@ -356,18 +499,26 @@ padding-top: 100px;
 	align-items: center;
 }
 
+.title{
+	padding-top: 100px;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	
+}
 
 .redes-sociales{
     width: 100%;
     display: flex;
     justify-content: center;
+	padding: 20px;
 }
 
 .redes-sociales a{
     margin: 5px;
     color: #fff;
     background-color: #164e8d;
-    padding: 9px 10px;
+    padding: 9px 12px;
     border-radius: 100px;
 }
 .redes-sociales a:hover{
@@ -382,26 +533,26 @@ form{
     display: flex;
 }
 form button{
-    background-color: #164e8d;
-    color: #fff;
+	background-color: #ffffffc0;
+    color: #000;
     padding: 10px;
     border: none;
     border-radius: 7px;
 }
 form input{
-    background-color: #164e8d5b;
+    background-color: #ffffff85;
     border: none;
     border-radius: 6px;
     padding: 6px;
     color: #fff;
 }
 form textarea{
-    background-color: #164e8d5b;
+	background-color: #ffffff85;
     border-radius: 7px;
    
 }
 select {
-    background-color: #164e8d5b;
+	background-color: #ffffff85;
     border-radius: 7px;
     padding: 6px;
 }
@@ -412,17 +563,24 @@ iframe{
     border-radius: 7px;
     width: 100%;
     height: 100%;
+	 box-shadow: 0 1px 5px rgb(2, 4, 24);
 }
 
 
 .mapa-form{
-    padding: 100px 10%;
-    display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, auto));
-    place-content: center;
-    gap: 2rem;
+   
+    margin: auto;
     width: 100%;
-    
+    max-width: 1000px;
+    background:linear-gradient(30deg, #164e8d, #164e8d9f);
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit,  minmax(450px, auto));
+    gap: 2rem;
+    margin-top: 30px;
 }
 
 
@@ -480,16 +638,22 @@ form{
     flex-direction: column;
     gap: 1rem;
 }
+.enl form{
+	width: 100%;
+}
 
-
-
-
-.texto input{
-    background-color: #282a2d18;
+.input-color input{
+	background-color: #282a2d18;
     border: none;
     border-radius: 9px;
     height: 5vh;
     width:100%;
+}
+
+.input-buton input{
+background-color: #164e8d;
+width: 100%;
+padding: 6px;
 }
 
 .pagos{
@@ -521,7 +685,10 @@ footer h5{
     color: #164e8d;
 }
 
-
+footer{
+	margin-top: 10rem;
+	border: 1px solid #164e8d7b;
+}
 
 @media (max-width: 1410px){
 	header{
@@ -601,12 +768,12 @@ footer h5{
     .home{
 		height: 120vh;
 	}
-	.home h1{
+	.home-text h1{
 		font-size: 40px;
 	}
-	.home p{
+	.home-text p{
 		font-size: 16px;
-	}
+	} 
 	
 	.submenu:hover #carrito{
 		display: block;
@@ -621,10 +788,41 @@ footer h5{
 	}
     .mapa-form{
         padding: 100px 13%;
-        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
         
         
     }
+	.buscador form button{
+		width: 3rem;
+		border-radius:30px ;
+	}.buscador form input{
+		width: 10rem;
+		border-radius:30px ;
+	}
+	.carousel-inner img{
+		height: 20vh;
+		width: 100%;
+	}
+
+	.botones{
+		padding: 0px 13%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+		gap: 2rem;
+		place-content: center;
+		width: 100%;
+	}
 	
 }
 
+@media (max-width: 320px){
+    .home{
+		height: 120vh;
+	}
+	.home-text h1{
+		font-size: 40px;
+	}
+	.home-text p{
+		font-size: 16px;
+	} 
+} 
