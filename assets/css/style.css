@@ -28,7 +28,7 @@ header{
 	width: 100%;
 	top: 0;
 	right: 0;
-	z-index: 1000;
+	z-index: 20000;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -46,6 +46,8 @@ header{
   .card-h{
 	height: 700px;
   }
+
+ 
   
   .btn-carrito {
 	position: fixed;
@@ -80,36 +82,7 @@ height: 35px;
     min-width: 300px;
 }
 
-.vacio {
-    padding: 10px;
-    background-color: crimson;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-}
-#carritoCerrar{
-	width: 2rem;
-	height: 1,5rem;
-	border-radius: 5px;
-}
-#boton-carrito{
-	border-radius: 5px;
-}
-#offcanvasRight{
-	z-index: 10100;
-}
-#vaciar-carrito{
-	border-radius: 5px;
-	background-color: #164e8d;
-}
-.borrar-curso {
-    background-color: red;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
+
 
 table{
 	text-align: center;
@@ -206,7 +179,7 @@ th{
 #menu-icon{
 	font-size: 34px;
 	color: var(--text-color);
-	z-index: 10001;
+	z-index: 200000;
 	cursor: pointer;
 	display: none;
 }
@@ -289,10 +262,7 @@ th{
 	text-align: center;
 
 }
-.icon-btn{
-	width: 24px;
-	height: 24px;
-}
+
 header.sticky{
 	background: var(--bg-color);
 	padding: 12px 13%;
@@ -313,7 +283,7 @@ header.sticky{
     right: 0;
     z-index: 1000;
     width: 100px;
-    padding: 110px 20px 140px ;
+    padding: 110px 20px 80px ;
 }
 .btn-car img{
 width: 50px;
@@ -449,6 +419,11 @@ padding-top: 100px;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+}
+
+#lupa img{
+	width: 40px;
+	height: 20px;
 }
 .buscador form button{
 	width: 5rem;
@@ -620,9 +595,12 @@ height: 30px;
 	font-size: 14px;
 }
 .card h5{
-	font-size: 17px;
+	font-size: 15px;
 }
-
+.btn-heart{
+	height: 10px;
+	display: none;
+}
 
 .card p{
 	padding-top: 14px;
@@ -633,6 +611,13 @@ height: 30px;
 	font-weight: 700;
 	
 }
+
+
+.icon-btn{
+	width: 20px;
+}
+
+
 
 
 /*farmacia-----------------------------------------------------------------*/
@@ -865,6 +850,14 @@ footer h5{
 footer{
 	margin-top: 10rem;
 	border: 1px solid #164e8d7b;
+}
+
+.btn{
+	width: 100px;
+}
+.btn img {
+	width: 30px;
+	height: 30px;
 }
 
 @media (max-width: 1410px){

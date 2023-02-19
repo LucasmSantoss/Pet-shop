@@ -30,9 +30,10 @@
 
     </ul>
     <div class="redes-sociales-h">
-      <a href="#"><i class='fa fa-instagram'></i></a>
-      <a href="#"> <i class='fa fa-linkedin'></i></a>
-      <a href="#"> <i class='fa fa-whatsapp'></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class='fa fa-instagram'></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"> <i class='fa fa-linkedin'></i></a>
+      <a href="https://api.whatsapp.com/qr/AHQDYWM7EKATH1?autoload=1&app_absent=0" target="_blank"> <i
+          class='fa fa-whatsapp'></i></a>
     </div>
 
     <div class="header-icons">
@@ -62,10 +63,10 @@
           <img class="icon-btn" src="./assets/img/icon/animales-icon.png" alt="mano-patita">
         </a>
       </div>
-      <div class="img-wpp">
+      <!-- <div class="img-wpp">
         <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><img src="./assets/img/whatsapp.png"
             alt="whatsapp"></a>
-      </div>
+      </div> -->
     </section>
 
 
@@ -118,6 +119,21 @@
 
     </section>
   </main>
+  <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn-car" id="btn-car"><img
+      src="./assets/img/carritoo.png" class="car" alt="car"></button>
+  <div class="modal fade modal-container" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content w-100 mx-auto" id="modal-content">
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center gap-3" id="modal-body">
+          <div id="cart">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
@@ -228,8 +244,10 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="./assets/scripts/header.js"> </script>
-  <script src="./assets/scripts/main.js"> </script>
-
+  <script type="module" src="./assets/scripts/main.js"> </script>
+  <script type="module" src="./assets/scripts/farmacia.js"> </script>
+  <script type="module" src="./assets/scripts/jugeteria.js"> </script>
+  <script type="module" src="./assets/module/functions.js"> </script>
 </body>
 
 </html>

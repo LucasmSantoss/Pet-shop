@@ -1,6 +1,8 @@
 
 
-import { getData, createCarruHome, writeSponsorsHome } from '../module/functions.js'
+import { getData, createCarruHome, writeSponsorsHome, createCards, filterProducts, writeSponsors, createCarru, createShopping, fillHeart } from '../module/functions.js'
+
+
 
 let data = getData()
 data.then((response) => {
