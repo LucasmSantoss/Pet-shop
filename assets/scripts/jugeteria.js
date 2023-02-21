@@ -29,6 +29,7 @@ searchBar.addEventListener("keyup", (e) => {
     createCards(filteredToys, container, e.target.value.toLowerCase())
 })
 
+
 container.addEventListener("click", (e) => {
     if (e.target.localName === "button") {
         let pressToy = toys.find(toy => toy._id == e.target.id)

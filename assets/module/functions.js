@@ -87,15 +87,7 @@ export function writeSponsors(list, container) {
   }
 }
 
-export function writeSponsorsHome(list, container) {
-  for (let i = 0; i < 18; i++) {
-    container.innerHTML += `
-        <div class="cont-slide">
-          <img src="./Assets/img/${list[i]}" alt="">
-        </div>
-      `
-  }
-}
+
 
 export function createCarru(list, container) {
 
@@ -117,25 +109,7 @@ export function createCarru(list, container) {
       `
 
 }
-export function createCarruHome(list, container) {
 
-  container.innerHTML += `
-      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/img/${list[0]}" class="d-block w-100 m-0 border1" alt="${list[0]}">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Assets/img/${list[1]}" class="d-block w-100 m-0 border1" alt="${list[1]}">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Assets/img/${list[2]}" class="d-block w-100 m-0 border1" alt="${list[2]}">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Assets/img/${list[3]}" class="d-block w-100 m-0 border1" alt="${list[3]}">
-                        </div>
-                      </div>
-    `
-}
 
 export function noEncontrado(container, formulario) {
   container.innerHTML = `<div class="style-mens">
